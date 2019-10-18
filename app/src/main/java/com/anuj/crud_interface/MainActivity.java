@@ -19,12 +19,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_main);
-        /*ActionBar actionBar=getSupportActionBar();
-        assert actionBar != null;
-        actionBar.setBackgroundDrawable(new ColorDrawable(0xFF2554F9));
-        actionBar.setTitle("MongoDB Login");
-
-         */
 
         Button button=findViewById(R.id.login_button);
         button.setOnClickListener(view -> {
@@ -32,9 +26,18 @@ public class MainActivity extends AppCompatActivity {
             Intent intent=new Intent(getApplicationContext(),ScriptEditor.class);
             startActivity(intent);
         });
-        //TODO:Link Sign Up button
 
 
     }
 
 }
+
+/*
+uri (mongodb+://[username]:[password]@[host name]:[port]/[database name]
+
+query: String
+skip: Integer
+limit: Integer
+order: asc/desc or boolean
+collection Name: people/person
+ */
